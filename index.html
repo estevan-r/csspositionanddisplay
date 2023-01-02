@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Position & Display Reference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;700&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>CSS Position & Display Reference</h1>
+
+    <div class="postion">
+      <h2>CSS Positioning</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Syntax</th><th>Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-a">
+            <td class="name">Static</td>
+            <td class="syntax">
+              <mark class="code">position: static;</mark>
+            </td>
+            <td class="values">The element is positioned according to the normal flow of the document. The <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, <mark>left</mark>, and <mark>z-index</mark> properties have no effect. This is the default value.</td>
+          </tr>
+          <tr class="row-b">
+            <td class="name">Relative</td>
+            <td class="syntax">
+              <mark class="code">position: relative;</mark>
+            </td>
+            <td class="values">The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, and <mark>left</mark>. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were <mark>static</mark>.</td>
+          </tr>
+          <tr class="row-a">
+            <td class="name">Absolute</td>
+            <td class="syntax">
+              <mark class="code">position: absolute;</mark>
+            </td>
+            <td class="values">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, and <mark>left</mark>.</td>
+          </tr>
+          <tr class="row-b">
+            <td class="name">Fixed</td>
+            <td class="syntax">
+              <mark class="code">position: fixed;</mark>
+            </td>
+            <td class="values">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a <mark>transform</mark>, <mark>perspective</mark>, or <mark>filter</mark> property set to something other than <mark>none</mark>, or the <mark>will-change</mark> property is set to <mark>transform</mark>, in which case that ancestor behaves as the containing block. Its final position is determined by the values of <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, and <mark>left</mark>.</td>
+          </tr>
+          <tr class="row-a">
+            <td class="name">Sticky</td>
+            <td class="syntax">
+              <mark class="code">position: sticky;</mark>
+            </td>
+            <td class="values">The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of <mark>top</mark>, <mark>right</mark>, <mark>bottom</mark>, and <mark>left</mark>. The offset does not affect the position of any other elements.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="display">  
+      <h2>CSS Display</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Syntax</th><th>Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-a">
+            <td class="name">Block</td>
+            <td class="syntax">
+              <mark class="code">display: block;</mark>
+            </td>
+            <td class="values">The element generates a block element box, generating line breaks both before and after the element when in the normal flow.</td>
+          </tr>
+          <tr class="row-b">
+            <td class="name">Inline</td>
+            <td class="syntax">
+              <mark class="code">display: inline;</mark>
+            </td>
+            <td class="values">The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.</td>
+          </tr>
+          <tr class="row-a">
+            <td class="name">Inline Block</td>
+            <td class="syntax">
+              <mark class="code">display: inline-block;</mark>
+            </td>
+            <td class="values">The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+  </body>
+</html>

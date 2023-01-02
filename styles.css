@@ -1,0 +1,64 @@
+body {
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  margin: 36px 36px;
+  background-color: #EAFDFC;
+  color: #36454F;
+}
+
+h1 {
+  color: #82AAE3;
+}
+
+table, th, td {
+    padding: 24px;
+    border-bottom: 3px solid #EAFDFC;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+  background-color: #82AAE3;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+mark {
+  font-family: 'IBM Plex Mono', sans-serif;
+  background-color: #FFF6BD;
+  color: #36454F;
+}
+
+.postion {
+  margin: 72px 0px;
+}
+
+.display {
+  margin: 72px 0px;
+}
+
+.row-a {
+  background-color: #91D8E4;
+}
+
+.row-b {
+  background-color: #BFEAF5;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.syntax {
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.values {
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+.code {
+  background-color: #FFD4B2;
+}
